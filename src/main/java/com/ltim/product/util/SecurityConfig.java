@@ -27,6 +27,7 @@ public class SecurityConfig {
 	            .csrf(csrf -> csrf.disable())
 	            .authorizeHttpRequests(auth -> auth
 	                .requestMatchers("/auth/login").permitAll()  // Allow login
+	                .requestMatchers("/actuator/**").permitAll()
 	                .requestMatchers(
 	                    "/v3/api-docs/**", 
 	                    "/swagger-ui/**", 
