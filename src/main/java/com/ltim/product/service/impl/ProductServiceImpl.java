@@ -1,6 +1,8 @@
 package com.ltim.product.service.impl;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -12,6 +14,8 @@ import com.ltim.product.service.ProductService;
 
 @Service
 public class ProductServiceImpl implements ProductService {
+	
+	Logger logger=LoggerFactory.getLogger(ProductServiceImpl.class);
 	@Autowired
     private ProductRepo productRepository;
 
@@ -29,7 +33,9 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Product createProduct(Product product) {
     	 try {
-             return productRepository.save(product);
+             Product p= productRepository.save(product);
+             logger.trace("Product added with Name: "+p.getName());
+             return p;
          } catch (Exception e) {
              throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Could not save product");
          }
