@@ -38,3 +38,519 @@
 2025-02-04T13:05:46.501+05:30  INFO 26368 --- [Product-with-Security] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-02-04T13:05:46.502+05:30  INFO 26368 --- [Product-with-Security] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2025-02-04T13:05:53.494+05:30 TRACE 26368 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Product added with Name: Mobile
+2025-02-04T13:13:41.225+05:30  INFO 26368 --- [Product-with-Security] [RMI TCP Connection(20)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-02-04T13:13:41.227+05:30  INFO 26368 --- [Product-with-Security] [RMI TCP Connection(20)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T13:13:41.234+05:30  INFO 26368 --- [Product-with-Security] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T13:13:41.238+05:30  INFO 26368 --- [Product-with-Security] [RMI TCP Connection(20)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T13:13:41.241+05:30  INFO 26368 --- [Product-with-Security] [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T13:13:41.244+05:30  INFO 26368 --- [Product-with-Security] [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T13:13:44.113+05:30  INFO 2648 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Starting ProductWithSecurityApplication using Java 21.0.4 with PID 2648 (C:\Temp\LtiMWorksapce\LtiMProject\target\classes started by 10829552 in C:\Temp\LtiMWorksapce\LtiMProject)
+2025-02-04T13:13:44.114+05:30 DEBUG 2648 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-02-04T13:13:44.115+05:30  INFO 2648 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T13:13:44.914+05:30  INFO 2648 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04T13:13:44.975+05:30  INFO 2648 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2025-02-04T13:13:45.581+05:30  INFO 2648 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-02-04T13:13:45.592+05:30  INFO 2648 --- [Product-with-Security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T13:13:45.592+05:30  INFO 2648 --- [Product-with-Security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T13:13:45.647+05:30  INFO 2648 --- [Product-with-Security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T13:13:45.647+05:30  INFO 2648 --- [Product-with-Security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1495 ms
+2025-02-04T13:13:45.797+05:30 DEBUG 2648 --- [Product-with-Security] [main] com.ltim.product.util.JWTFilter          : Filter 'JWTFilter' configured for use
+2025-02-04T13:13:45.867+05:30  INFO 2648 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T13:13:46.016+05:30  INFO 2648 --- [Product-with-Security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-02-04T13:13:46.018+05:30  INFO 2648 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T13:13:46.069+05:30  INFO 2648 --- [Product-with-Security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-04T13:13:46.119+05:30  INFO 2648 --- [Product-with-Security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-02-04T13:13:46.147+05:30  INFO 2648 --- [Product-with-Security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-04T13:13:46.367+05:30  INFO 2648 --- [Product-with-Security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04T13:13:46.405+05:30  WARN 2648 --- [Product-with-Security] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-04T13:13:46.419+05:30  INFO 2648 --- [Product-with-Security] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-04T13:13:47.040+05:30  INFO 2648 --- [Product-with-Security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-04T13:13:47.069+05:30  INFO 2648 --- [Product-with-Security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T13:13:47.392+05:30  WARN 2648 --- [Product-with-Security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04T13:13:47.426+05:30  INFO 2648 --- [Product-with-Security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-02-04T13:13:47.797+05:30  INFO 2648 --- [Product-with-Security] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-04T13:13:47.879+05:30  INFO 2648 --- [Product-with-Security] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-04T13:13:48.206+05:30  INFO 2648 --- [Product-with-Security] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-02-04T13:13:48.316+05:30  INFO 2648 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-02-04T13:13:48.326+05:30  INFO 2648 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Started ProductWithSecurityApplication in 4.56 seconds (process running for 5.158)
+2025-02-04T13:13:48.562+05:30  INFO 2648 --- [Product-with-Security] [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T13:13:48.562+05:30  INFO 2648 --- [Product-with-Security] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T13:13:48.566+05:30  INFO 2648 --- [Product-with-Security] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-02-04T13:13:52.501+05:30 TRACE 2648 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Inside method createProduct of ProductServiceImpl
+2025-02-04T13:13:52.582+05:30 TRACE 2648 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Product added with Name: Mobile
+2025-02-04T13:13:52.582+05:30 TRACE 2648 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : exit from method createProduct of ProductServiceImpl
+2025-02-04T13:19:45.271+05:30  INFO 2648 --- [Product-with-Security] [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-02-04T13:19:45.274+05:30  INFO 2648 --- [Product-with-Security] [RMI TCP Connection(16)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T13:19:45.281+05:30  INFO 2648 --- [Product-with-Security] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T13:19:45.286+05:30  INFO 2648 --- [Product-with-Security] [RMI TCP Connection(16)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T13:19:45.289+05:30  INFO 2648 --- [Product-with-Security] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T13:19:45.291+05:30  INFO 2648 --- [Product-with-Security] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T13:19:49.094+05:30  INFO 22864 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Starting ProductWithSecurityApplication using Java 21.0.4 with PID 22864 (C:\Temp\LtiMWorksapce\LtiMProject\target\classes started by 10829552 in C:\Temp\LtiMWorksapce\LtiMProject)
+2025-02-04T13:19:49.097+05:30 DEBUG 22864 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-02-04T13:19:49.098+05:30  INFO 22864 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T13:19:49.941+05:30  INFO 22864 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04T13:19:49.993+05:30  INFO 22864 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2025-02-04T13:19:50.596+05:30  INFO 22864 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-02-04T13:19:50.608+05:30  INFO 22864 --- [Product-with-Security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T13:19:50.608+05:30  INFO 22864 --- [Product-with-Security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T13:19:50.665+05:30  INFO 22864 --- [Product-with-Security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T13:19:50.665+05:30  INFO 22864 --- [Product-with-Security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1533 ms
+2025-02-04T13:19:50.816+05:30 DEBUG 22864 --- [Product-with-Security] [main] com.ltim.product.util.JWTFilter          : Filter 'JWTFilter' configured for use
+2025-02-04T13:19:50.891+05:30  INFO 22864 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T13:19:51.057+05:30  INFO 22864 --- [Product-with-Security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-02-04T13:19:51.059+05:30  INFO 22864 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T13:19:51.107+05:30  INFO 22864 --- [Product-with-Security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-04T13:19:51.158+05:30  INFO 22864 --- [Product-with-Security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-02-04T13:19:51.191+05:30  INFO 22864 --- [Product-with-Security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-04T13:19:51.450+05:30  INFO 22864 --- [Product-with-Security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04T13:19:51.503+05:30  WARN 22864 --- [Product-with-Security] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-04T13:19:51.518+05:30  INFO 22864 --- [Product-with-Security] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-04T13:19:52.227+05:30  INFO 22864 --- [Product-with-Security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-04T13:19:52.266+05:30  INFO 22864 --- [Product-with-Security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T13:19:52.622+05:30  WARN 22864 --- [Product-with-Security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04T13:19:52.662+05:30  INFO 22864 --- [Product-with-Security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-02-04T13:19:53.048+05:30  INFO 22864 --- [Product-with-Security] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-04T13:19:53.129+05:30  INFO 22864 --- [Product-with-Security] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-04T13:19:53.473+05:30  INFO 22864 --- [Product-with-Security] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-02-04T13:19:53.591+05:30  INFO 22864 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-02-04T13:19:53.604+05:30  INFO 22864 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Started ProductWithSecurityApplication in 4.915 seconds (process running for 5.748)
+2025-02-04T13:19:54.210+05:30  INFO 22864 --- [Product-with-Security] [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T13:19:54.210+05:30  INFO 22864 --- [Product-with-Security] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T13:19:54.211+05:30  INFO 22864 --- [Product-with-Security] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T13:20:00.977+05:30 TRACE 22864 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Inside method createProduct of ProductServiceImpl
+2025-02-04T13:20:01.072+05:30 TRACE 22864 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Product added with Name: Mobile
+2025-02-04T13:20:01.072+05:30 TRACE 22864 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : exit from method createProduct of ProductServiceImpl
+2025-02-04T13:20:36.997+05:30 TRACE 22864 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : Inside method deleteProduct of ProductServiceImpl with productId:2
+2025-02-04T13:20:37.340+05:30 TRACE 22864 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : Product not exist with id: 2
+2025-02-04T13:21:13.967+05:30 TRACE 22864 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : Inside method deleteProduct of ProductServiceImpl with productId:1
+2025-02-04T13:21:13.994+05:30 TRACE 22864 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : Product deleted successfully  with productId:1
+2025-02-04T13:23:16.465+05:30  INFO 23972 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Starting ProductWithSecurityApplication using Java 21.0.4 with PID 23972 (C:\Temp\LtiMWorksapce\LtiMProject\target\classes started by 10829552 in C:\Temp\LtiMWorksapce\LtiMProject)
+2025-02-04T13:23:16.468+05:30 DEBUG 23972 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-02-04T13:23:16.468+05:30  INFO 23972 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T13:23:17.255+05:30  INFO 23972 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04T13:23:17.303+05:30  INFO 23972 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
+2025-02-04T13:23:17.840+05:30  INFO 23972 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-02-04T13:23:17.851+05:30  INFO 23972 --- [Product-with-Security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T13:23:17.851+05:30  INFO 23972 --- [Product-with-Security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T13:23:17.905+05:30  INFO 23972 --- [Product-with-Security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T13:23:17.906+05:30  INFO 23972 --- [Product-with-Security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1404 ms
+2025-02-04T13:23:18.040+05:30 DEBUG 23972 --- [Product-with-Security] [main] com.ltim.product.util.JWTFilter          : Filter 'JWTFilter' configured for use
+2025-02-04T13:23:18.110+05:30  INFO 23972 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T13:23:18.246+05:30  INFO 23972 --- [Product-with-Security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-02-04T13:23:18.248+05:30  INFO 23972 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T13:23:18.294+05:30  INFO 23972 --- [Product-with-Security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-04T13:23:18.340+05:30  INFO 23972 --- [Product-with-Security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-02-04T13:23:18.366+05:30  INFO 23972 --- [Product-with-Security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-04T13:23:18.584+05:30  INFO 23972 --- [Product-with-Security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04T13:23:18.621+05:30  WARN 23972 --- [Product-with-Security] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-04T13:23:18.633+05:30  INFO 23972 --- [Product-with-Security] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-04T13:23:19.256+05:30  INFO 23972 --- [Product-with-Security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-04T13:23:19.286+05:30  INFO 23972 --- [Product-with-Security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T13:23:19.600+05:30  WARN 23972 --- [Product-with-Security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04T13:23:19.634+05:30  INFO 23972 --- [Product-with-Security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-02-04T13:23:19.989+05:30  INFO 23972 --- [Product-with-Security] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-04T13:23:20.063+05:30  INFO 23972 --- [Product-with-Security] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-04T13:23:20.374+05:30  INFO 23972 --- [Product-with-Security] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-02-04T13:23:20.479+05:30  INFO 23972 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-02-04T13:23:20.489+05:30  INFO 23972 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Started ProductWithSecurityApplication in 4.336 seconds (process running for 4.933)
+2025-02-04T13:23:20.948+05:30  INFO 23972 --- [Product-with-Security] [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T13:23:20.948+05:30  INFO 23972 --- [Product-with-Security] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T13:23:20.949+05:30  INFO 23972 --- [Product-with-Security] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T13:25:45.323+05:30 TRACE 23972 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Inside method getAllProducts of ProductServiceImpl
+2025-02-04T13:25:45.461+05:30 TRACE 23972 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Products available are:[]
+2025-02-04T13:26:08.444+05:30 TRACE 23972 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : Inside method createProduct of ProductServiceImpl
+2025-02-04T13:26:08.482+05:30 TRACE 23972 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : Product added with Name: Mobile
+2025-02-04T13:26:08.482+05:30 TRACE 23972 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : exit from method createProduct of ProductServiceImpl
+2025-02-04T13:26:21.452+05:30 TRACE 23972 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : Inside method createProduct of ProductServiceImpl
+2025-02-04T13:26:21.453+05:30 TRACE 23972 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : Product added with Name: Mobile
+2025-02-04T13:26:21.454+05:30 TRACE 23972 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : exit from method createProduct of ProductServiceImpl
+2025-02-04T13:26:28.810+05:30 TRACE 23972 --- [Product-with-Security] [http-nio-8082-exec-4] c.l.p.service.impl.ProductServiceImpl    : Inside method getAllProducts of ProductServiceImpl
+2025-02-04T13:26:28.814+05:30 TRACE 23972 --- [Product-with-Security] [http-nio-8082-exec-4] c.l.p.service.impl.ProductServiceImpl    : Products available are:[com.ltim.product.entity.Product@2f1376c9, com.ltim.product.entity.Product@4e1040a3]
+2025-02-04T13:27:02.195+05:30  INFO 23972 --- [Product-with-Security] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-02-04T13:27:02.198+05:30  INFO 23972 --- [Product-with-Security] [RMI TCP Connection(15)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T13:27:02.204+05:30  INFO 23972 --- [Product-with-Security] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T13:27:02.209+05:30  INFO 23972 --- [Product-with-Security] [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T13:27:02.212+05:30  INFO 23972 --- [Product-with-Security] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T13:27:02.215+05:30  INFO 23972 --- [Product-with-Security] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T13:27:05.963+05:30  INFO 2012 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Starting ProductWithSecurityApplication using Java 21.0.4 with PID 2012 (C:\Temp\LtiMWorksapce\LtiMProject\target\classes started by 10829552 in C:\Temp\LtiMWorksapce\LtiMProject)
+2025-02-04T13:27:05.965+05:30 DEBUG 2012 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-02-04T13:27:05.965+05:30  INFO 2012 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T13:27:06.727+05:30  INFO 2012 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04T13:27:06.773+05:30  INFO 2012 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2025-02-04T13:27:07.311+05:30  INFO 2012 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-02-04T13:27:07.322+05:30  INFO 2012 --- [Product-with-Security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T13:27:07.323+05:30  INFO 2012 --- [Product-with-Security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T13:27:07.376+05:30  INFO 2012 --- [Product-with-Security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T13:27:07.377+05:30  INFO 2012 --- [Product-with-Security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1378 ms
+2025-02-04T13:27:07.509+05:30 DEBUG 2012 --- [Product-with-Security] [main] com.ltim.product.util.JWTFilter          : Filter 'JWTFilter' configured for use
+2025-02-04T13:27:07.580+05:30  INFO 2012 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T13:27:07.723+05:30  INFO 2012 --- [Product-with-Security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-02-04T13:27:07.726+05:30  INFO 2012 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T13:27:07.771+05:30  INFO 2012 --- [Product-with-Security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-04T13:27:07.815+05:30  INFO 2012 --- [Product-with-Security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-02-04T13:27:07.842+05:30  INFO 2012 --- [Product-with-Security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-04T13:27:08.066+05:30  INFO 2012 --- [Product-with-Security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04T13:27:08.106+05:30  WARN 2012 --- [Product-with-Security] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-04T13:27:08.121+05:30  INFO 2012 --- [Product-with-Security] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-04T13:27:08.714+05:30  INFO 2012 --- [Product-with-Security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-04T13:27:08.744+05:30  INFO 2012 --- [Product-with-Security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T13:27:09.062+05:30  WARN 2012 --- [Product-with-Security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04T13:27:09.098+05:30  INFO 2012 --- [Product-with-Security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-02-04T13:27:09.448+05:30  INFO 2012 --- [Product-with-Security] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-04T13:27:09.531+05:30  INFO 2012 --- [Product-with-Security] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-04T13:27:09.851+05:30  INFO 2012 --- [Product-with-Security] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-02-04T13:27:09.958+05:30  INFO 2012 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-02-04T13:27:09.968+05:30  INFO 2012 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Started ProductWithSecurityApplication in 4.313 seconds (process running for 4.906)
+2025-02-04T13:27:10.269+05:30  INFO 2012 --- [Product-with-Security] [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T13:27:10.269+05:30  INFO 2012 --- [Product-with-Security] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T13:27:10.270+05:30  INFO 2012 --- [Product-with-Security] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T13:27:19.968+05:30 TRACE 2012 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Inside method createProduct of ProductServiceImpl
+2025-02-04T13:27:20.047+05:30 TRACE 2012 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Product added with Name: Mobile
+2025-02-04T13:27:20.047+05:30 TRACE 2012 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : exit from method createProduct of ProductServiceImpl
+2025-02-04T13:27:33.286+05:30 TRACE 2012 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : Inside method createProduct of ProductServiceImpl
+2025-02-04T13:27:33.288+05:30 TRACE 2012 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : Product added with Name: Mobile
+2025-02-04T13:27:33.288+05:30 TRACE 2012 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : exit from method createProduct of ProductServiceImpl
+2025-02-04T13:27:39.164+05:30 TRACE 2012 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : Inside method getAllProducts of ProductServiceImpl
+2025-02-04T13:27:39.260+05:30 TRACE 2012 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : Products available are:[Product [id=1, name=Mobile, description=Ios, price=50000.0, quantity=10], Product [id=2, name=Mobile, description=Android, price=25000.0, quantity=10]]
+2025-02-04T13:28:07.986+05:30 TRACE 2012 --- [Product-with-Security] [http-nio-8082-exec-5] c.l.p.service.impl.ProductServiceImpl    : Inside method updateProduct of ProductServiceImpl with productId:3
+2025-02-04T13:46:30.862+05:30  INFO 2012 --- [Product-with-Security] [RMI TCP Connection(31)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-02-04T13:46:30.864+05:30  INFO 2012 --- [Product-with-Security] [RMI TCP Connection(31)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T13:46:30.871+05:30  INFO 2012 --- [Product-with-Security] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T13:46:30.876+05:30  INFO 2012 --- [Product-with-Security] [RMI TCP Connection(31)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T13:46:30.879+05:30  INFO 2012 --- [Product-with-Security] [RMI TCP Connection(31)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T13:46:30.882+05:30  INFO 2012 --- [Product-with-Security] [RMI TCP Connection(31)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T13:46:33.833+05:30  INFO 19664 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Starting ProductWithSecurityApplication using Java 21.0.4 with PID 19664 (C:\Temp\LtiMWorksapce\LtiMProject\target\classes started by 10829552 in C:\Temp\LtiMWorksapce\LtiMProject)
+2025-02-04T13:46:33.835+05:30 DEBUG 19664 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-02-04T13:46:33.836+05:30  INFO 19664 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T13:46:34.650+05:30  INFO 19664 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04T13:46:34.695+05:30  INFO 19664 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2025-02-04T13:46:35.233+05:30  INFO 19664 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-02-04T13:46:35.244+05:30  INFO 19664 --- [Product-with-Security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T13:46:35.244+05:30  INFO 19664 --- [Product-with-Security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T13:46:35.299+05:30  INFO 19664 --- [Product-with-Security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T13:46:35.299+05:30  INFO 19664 --- [Product-with-Security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1422 ms
+2025-02-04T13:46:35.436+05:30 DEBUG 19664 --- [Product-with-Security] [main] com.ltim.product.util.JWTFilter          : Filter 'JWTFilter' configured for use
+2025-02-04T13:46:35.507+05:30  INFO 19664 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T13:46:35.643+05:30  INFO 19664 --- [Product-with-Security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-02-04T13:46:35.646+05:30  INFO 19664 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T13:46:35.689+05:30  INFO 19664 --- [Product-with-Security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-04T13:46:35.734+05:30  INFO 19664 --- [Product-with-Security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-02-04T13:46:35.760+05:30  INFO 19664 --- [Product-with-Security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-04T13:46:35.980+05:30  INFO 19664 --- [Product-with-Security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04T13:46:36.017+05:30  WARN 19664 --- [Product-with-Security] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-04T13:46:36.032+05:30  INFO 19664 --- [Product-with-Security] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-04T13:46:36.627+05:30  INFO 19664 --- [Product-with-Security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-04T13:46:36.656+05:30  INFO 19664 --- [Product-with-Security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T13:46:36.971+05:30  WARN 19664 --- [Product-with-Security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04T13:46:37.007+05:30  INFO 19664 --- [Product-with-Security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-02-04T13:46:37.360+05:30  INFO 19664 --- [Product-with-Security] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-04T13:46:37.436+05:30  INFO 19664 --- [Product-with-Security] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-04T13:46:37.745+05:30  INFO 19664 --- [Product-with-Security] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-02-04T13:46:37.854+05:30  INFO 19664 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-02-04T13:46:37.864+05:30  INFO 19664 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Started ProductWithSecurityApplication in 4.403 seconds (process running for 4.998)
+2025-02-04T13:46:38.175+05:30  INFO 19664 --- [Product-with-Security] [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T13:46:38.175+05:30  INFO 19664 --- [Product-with-Security] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T13:46:38.176+05:30  INFO 19664 --- [Product-with-Security] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T13:46:43.529+05:30 TRACE 19664 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Inside method updateProduct of ProductServiceImpl with productId:3
+2025-02-04T13:47:25.735+05:30  INFO 19664 --- [Product-with-Security] [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-02-04T13:47:25.737+05:30  INFO 19664 --- [Product-with-Security] [RMI TCP Connection(12)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T13:47:25.743+05:30  INFO 19664 --- [Product-with-Security] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T13:47:25.748+05:30  INFO 19664 --- [Product-with-Security] [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T13:47:25.751+05:30  INFO 19664 --- [Product-with-Security] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T13:47:25.754+05:30  INFO 19664 --- [Product-with-Security] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T13:47:28.665+05:30  INFO 28768 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Starting ProductWithSecurityApplication using Java 21.0.4 with PID 28768 (C:\Temp\LtiMWorksapce\LtiMProject\target\classes started by 10829552 in C:\Temp\LtiMWorksapce\LtiMProject)
+2025-02-04T13:47:28.667+05:30 DEBUG 28768 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-02-04T13:47:28.667+05:30  INFO 28768 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T13:47:29.445+05:30  INFO 28768 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04T13:47:29.490+05:30  INFO 28768 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2025-02-04T13:47:30.019+05:30  INFO 28768 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-02-04T13:47:30.029+05:30  INFO 28768 --- [Product-with-Security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T13:47:30.030+05:30  INFO 28768 --- [Product-with-Security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T13:47:30.086+05:30  INFO 28768 --- [Product-with-Security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T13:47:30.087+05:30  INFO 28768 --- [Product-with-Security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1389 ms
+2025-02-04T13:47:30.220+05:30 DEBUG 28768 --- [Product-with-Security] [main] com.ltim.product.util.JWTFilter          : Filter 'JWTFilter' configured for use
+2025-02-04T13:47:30.290+05:30  INFO 28768 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T13:47:30.425+05:30  INFO 28768 --- [Product-with-Security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-02-04T13:47:30.427+05:30  INFO 28768 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T13:47:30.471+05:30  INFO 28768 --- [Product-with-Security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-04T13:47:30.515+05:30  INFO 28768 --- [Product-with-Security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-02-04T13:47:30.542+05:30  INFO 28768 --- [Product-with-Security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-04T13:47:30.761+05:30  INFO 28768 --- [Product-with-Security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04T13:47:30.798+05:30  WARN 28768 --- [Product-with-Security] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-04T13:47:30.812+05:30  INFO 28768 --- [Product-with-Security] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-04T13:47:31.412+05:30  INFO 28768 --- [Product-with-Security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-04T13:47:31.441+05:30  INFO 28768 --- [Product-with-Security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T13:47:31.763+05:30  WARN 28768 --- [Product-with-Security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04T13:47:31.797+05:30  INFO 28768 --- [Product-with-Security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-02-04T13:47:32.150+05:30  INFO 28768 --- [Product-with-Security] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-04T13:47:32.225+05:30  INFO 28768 --- [Product-with-Security] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-04T13:47:32.543+05:30  INFO 28768 --- [Product-with-Security] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-02-04T13:47:32.653+05:30  INFO 28768 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-02-04T13:47:32.663+05:30  INFO 28768 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Started ProductWithSecurityApplication in 4.325 seconds (process running for 4.923)
+2025-02-04T13:47:33.009+05:30  INFO 28768 --- [Product-with-Security] [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T13:47:33.009+05:30  INFO 28768 --- [Product-with-Security] [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T13:47:33.010+05:30  INFO 28768 --- [Product-with-Security] [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T13:47:39.275+05:30 TRACE 28768 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Inside method updateProduct of ProductServiceImpl with productId:3
+2025-02-04T13:47:39.338+05:30 TRACE 28768 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Product not exist with id: 3
+2025-02-04T13:48:05.639+05:30 TRACE 28768 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : Inside method createProduct of ProductServiceImpl
+2025-02-04T13:48:05.673+05:30 TRACE 28768 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : Product added with Name: Mobile
+2025-02-04T13:48:05.673+05:30 TRACE 28768 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : exit from method createProduct of ProductServiceImpl
+2025-02-04T13:48:53.000+05:30 TRACE 28768 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : Inside method createProduct of ProductServiceImpl
+2025-02-04T13:48:53.002+05:30 TRACE 28768 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : Product added with Name: Mobile
+2025-02-04T13:48:53.002+05:30 TRACE 28768 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : exit from method createProduct of ProductServiceImpl
+2025-02-04T13:49:07.372+05:30 TRACE 28768 --- [Product-with-Security] [http-nio-8082-exec-4] c.l.p.service.impl.ProductServiceImpl    : Inside method getAllProducts of ProductServiceImpl
+2025-02-04T13:49:07.453+05:30 TRACE 28768 --- [Product-with-Security] [http-nio-8082-exec-4] c.l.p.service.impl.ProductServiceImpl    : Products available are:[Product [id=1, name=Mobile, description=Android, price=25000.0, quantity=10], Product [id=2, name=Mobile, description=Ios, price=50000.0, quantity=10]]
+2025-02-04T13:50:11.931+05:30 TRACE 28768 --- [Product-with-Security] [http-nio-8082-exec-6] c.l.p.service.impl.ProductServiceImpl    : Inside method updateProduct of ProductServiceImpl with productId:2
+2025-02-04T13:50:22.003+05:30 TRACE 28768 --- [Product-with-Security] [http-nio-8082-exec-7] c.l.p.service.impl.ProductServiceImpl    : Inside method getAllProducts of ProductServiceImpl
+2025-02-04T13:50:22.008+05:30 TRACE 28768 --- [Product-with-Security] [http-nio-8082-exec-7] c.l.p.service.impl.ProductServiceImpl    : Products available are:[Product [id=1, name=Mobile, description=Android, price=25000.0, quantity=10], Product [id=2, name=null, description=null, price=0.0, quantity=5]]
+2025-02-04T13:58:25.703+05:30  INFO 28768 --- [Product-with-Security] [RMI TCP Connection(23)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-02-04T13:58:25.706+05:30  INFO 28768 --- [Product-with-Security] [RMI TCP Connection(23)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T13:58:25.712+05:30  INFO 28768 --- [Product-with-Security] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T13:58:25.717+05:30  INFO 28768 --- [Product-with-Security] [RMI TCP Connection(23)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T13:58:25.719+05:30  INFO 28768 --- [Product-with-Security] [RMI TCP Connection(23)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T13:58:25.722+05:30  INFO 28768 --- [Product-with-Security] [RMI TCP Connection(23)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T13:58:28.532+05:30  INFO 20216 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Starting ProductWithSecurityApplication using Java 21.0.4 with PID 20216 (C:\Temp\LtiMWorksapce\LtiMProject\target\classes started by 10829552 in C:\Temp\LtiMWorksapce\LtiMProject)
+2025-02-04T13:58:28.533+05:30 DEBUG 20216 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-02-04T13:58:28.534+05:30  INFO 20216 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T13:58:29.317+05:30  INFO 20216 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04T13:58:29.364+05:30  INFO 20216 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
+2025-02-04T13:58:29.904+05:30  INFO 20216 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-02-04T13:58:29.914+05:30  INFO 20216 --- [Product-with-Security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T13:58:29.915+05:30  INFO 20216 --- [Product-with-Security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T13:58:29.969+05:30  INFO 20216 --- [Product-with-Security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T13:58:29.969+05:30  INFO 20216 --- [Product-with-Security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1403 ms
+2025-02-04T13:58:30.108+05:30 DEBUG 20216 --- [Product-with-Security] [main] com.ltim.product.util.JWTFilter          : Filter 'JWTFilter' configured for use
+2025-02-04T13:58:30.177+05:30  INFO 20216 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T13:58:30.313+05:30  INFO 20216 --- [Product-with-Security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-02-04T13:58:30.315+05:30  INFO 20216 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T13:58:30.358+05:30  INFO 20216 --- [Product-with-Security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-04T13:58:30.403+05:30  INFO 20216 --- [Product-with-Security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-02-04T13:58:30.430+05:30  INFO 20216 --- [Product-with-Security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-04T13:58:30.655+05:30  INFO 20216 --- [Product-with-Security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04T13:58:30.694+05:30  WARN 20216 --- [Product-with-Security] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-04T13:58:30.708+05:30  INFO 20216 --- [Product-with-Security] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-04T13:58:31.300+05:30  INFO 20216 --- [Product-with-Security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-04T13:58:31.328+05:30  INFO 20216 --- [Product-with-Security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T13:58:31.639+05:30  WARN 20216 --- [Product-with-Security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04T13:58:31.672+05:30  INFO 20216 --- [Product-with-Security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-02-04T13:58:32.022+05:30  INFO 20216 --- [Product-with-Security] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-04T13:58:32.111+05:30  INFO 20216 --- [Product-with-Security] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-04T13:58:32.419+05:30  INFO 20216 --- [Product-with-Security] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-02-04T13:58:32.523+05:30  INFO 20216 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-02-04T13:58:32.537+05:30  INFO 20216 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Started ProductWithSecurityApplication in 4.315 seconds (process running for 4.919)
+2025-02-04T13:58:33.026+05:30  INFO 20216 --- [Product-with-Security] [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T13:58:33.027+05:30  INFO 20216 --- [Product-with-Security] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T13:58:33.028+05:30  INFO 20216 --- [Product-with-Security] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T13:58:42.624+05:30 TRACE 20216 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : Inside method createProduct of ProductServiceImpl
+2025-02-04T13:58:42.703+05:30 TRACE 20216 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : Product added with Name: Mobile
+2025-02-04T13:58:42.703+05:30 TRACE 20216 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : exit from method createProduct of ProductServiceImpl
+2025-02-04T13:58:55.242+05:30 TRACE 20216 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Inside method getAllProducts of ProductServiceImpl
+2025-02-04T13:58:55.340+05:30 TRACE 20216 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Products available are:[Product [id=1, name=Mobile, description=Ios, price=50000.0, quantity=10]]
+2025-02-04T13:59:02.796+05:30 TRACE 20216 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : Inside method updateProduct of ProductServiceImpl with productId:2
+2025-02-04T13:59:02.801+05:30 TRACE 20216 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : Product not exist with id: 2
+2025-02-04T13:59:10.773+05:30 TRACE 20216 --- [Product-with-Security] [http-nio-8082-exec-4] c.l.p.service.impl.ProductServiceImpl    : Inside method updateProduct of ProductServiceImpl with productId:1
+2025-02-04T13:59:21.882+05:30 TRACE 20216 --- [Product-with-Security] [http-nio-8082-exec-5] c.l.p.service.impl.ProductServiceImpl    : Inside method getAllProducts of ProductServiceImpl
+2025-02-04T13:59:21.882+05:30 TRACE 20216 --- [Product-with-Security] [http-nio-8082-exec-5] c.l.p.service.impl.ProductServiceImpl    : Products available are:[Product [id=1, name=null, description=null, price=0.0, quantity=5]]
+2025-02-04T14:17:41.820+05:30  INFO 20216 --- [Product-with-Security] [RMI TCP Connection(29)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-02-04T14:17:41.823+05:30  INFO 20216 --- [Product-with-Security] [RMI TCP Connection(29)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T14:17:41.829+05:30  INFO 20216 --- [Product-with-Security] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T14:17:41.835+05:30  INFO 20216 --- [Product-with-Security] [RMI TCP Connection(29)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T14:17:41.837+05:30  INFO 20216 --- [Product-with-Security] [RMI TCP Connection(29)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T14:17:41.840+05:30  INFO 20216 --- [Product-with-Security] [RMI TCP Connection(29)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T14:17:44.495+05:30  INFO 7712 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Starting ProductWithSecurityApplication using Java 21.0.4 with PID 7712 (C:\Temp\LtiMWorksapce\LtiMProject\target\classes started by 10829552 in C:\Temp\LtiMWorksapce\LtiMProject)
+2025-02-04T14:17:44.497+05:30 DEBUG 7712 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-02-04T14:17:44.497+05:30  INFO 7712 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T14:17:45.261+05:30  INFO 7712 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04T14:17:45.317+05:30  INFO 7712 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2025-02-04T14:17:45.853+05:30  INFO 7712 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-02-04T14:17:45.864+05:30  INFO 7712 --- [Product-with-Security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T14:17:45.864+05:30  INFO 7712 --- [Product-with-Security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T14:17:45.918+05:30  INFO 7712 --- [Product-with-Security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T14:17:45.918+05:30  INFO 7712 --- [Product-with-Security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1386 ms
+2025-02-04T14:17:46.049+05:30 DEBUG 7712 --- [Product-with-Security] [main] com.ltim.product.util.JWTFilter          : Filter 'JWTFilter' configured for use
+2025-02-04T14:17:46.118+05:30  INFO 7712 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T14:17:46.251+05:30  INFO 7712 --- [Product-with-Security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-02-04T14:17:46.253+05:30  INFO 7712 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T14:17:46.300+05:30  INFO 7712 --- [Product-with-Security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-04T14:17:46.344+05:30  INFO 7712 --- [Product-with-Security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-02-04T14:17:46.370+05:30  INFO 7712 --- [Product-with-Security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-04T14:17:46.592+05:30  INFO 7712 --- [Product-with-Security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04T14:17:46.630+05:30  WARN 7712 --- [Product-with-Security] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-04T14:17:46.643+05:30  INFO 7712 --- [Product-with-Security] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-04T14:17:47.240+05:30  INFO 7712 --- [Product-with-Security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-04T14:17:47.269+05:30  INFO 7712 --- [Product-with-Security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T14:17:47.589+05:30  WARN 7712 --- [Product-with-Security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04T14:17:47.621+05:30  INFO 7712 --- [Product-with-Security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-02-04T14:17:47.998+05:30  INFO 7712 --- [Product-with-Security] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-04T14:17:48.085+05:30  INFO 7712 --- [Product-with-Security] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-04T14:17:48.398+05:30  INFO 7712 --- [Product-with-Security] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-02-04T14:17:48.505+05:30  INFO 7712 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-02-04T14:17:48.515+05:30  INFO 7712 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Started ProductWithSecurityApplication in 4.332 seconds (process running for 4.921)
+2025-02-04T14:17:48.774+05:30  INFO 7712 --- [Product-with-Security] [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T14:17:48.774+05:30  INFO 7712 --- [Product-with-Security] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T14:17:48.775+05:30  INFO 7712 --- [Product-with-Security] [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-02-04T14:18:24.186+05:30 TRACE 7712 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : Inside method createProduct of ProductServiceImpl
+2025-02-04T14:18:24.270+05:30 TRACE 7712 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : Product added with Name: Mobile
+2025-02-04T14:18:24.270+05:30 TRACE 7712 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : exit from method createProduct of ProductServiceImpl
+2025-02-04T14:18:47.678+05:30 TRACE 7712 --- [Product-with-Security] [http-nio-8082-exec-4] c.l.p.service.impl.ProductServiceImpl    : Inside method getAllProducts of ProductServiceImpl
+2025-02-04T14:18:47.768+05:30 TRACE 7712 --- [Product-with-Security] [http-nio-8082-exec-4] c.l.p.service.impl.ProductServiceImpl    : Products available are:[Product [id=1, name=Mobile, description=Ios, price=50000.0, quantity=10]]
+2025-02-04T14:18:58.711+05:30 TRACE 7712 --- [Product-with-Security] [http-nio-8082-exec-5] c.l.p.service.impl.ProductServiceImpl    : Inside method updateProduct of ProductServiceImpl with productId:1
+2025-02-04T14:19:37.177+05:30  INFO 7712 --- [Product-with-Security] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-02-04T14:19:37.180+05:30  INFO 7712 --- [Product-with-Security] [RMI TCP Connection(13)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T14:19:37.186+05:30  INFO 7712 --- [Product-with-Security] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T14:19:37.191+05:30  INFO 7712 --- [Product-with-Security] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T14:19:37.195+05:30  INFO 7712 --- [Product-with-Security] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T14:19:37.198+05:30  INFO 7712 --- [Product-with-Security] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T14:19:39.647+05:30  INFO 26940 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Starting ProductWithSecurityApplication using Java 21.0.4 with PID 26940 (C:\Temp\LtiMWorksapce\LtiMProject\target\classes started by 10829552 in C:\Temp\LtiMWorksapce\LtiMProject)
+2025-02-04T14:19:39.649+05:30 DEBUG 26940 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-02-04T14:19:39.649+05:30  INFO 26940 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T14:19:40.424+05:30  INFO 26940 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04T14:19:40.460+05:30  INFO 26940 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2025-02-04T14:19:41.032+05:30  INFO 26940 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-02-04T14:19:41.043+05:30  INFO 26940 --- [Product-with-Security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T14:19:41.044+05:30  INFO 26940 --- [Product-with-Security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T14:19:41.107+05:30  INFO 26940 --- [Product-with-Security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T14:19:41.107+05:30  INFO 26940 --- [Product-with-Security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1426 ms
+2025-02-04T14:19:41.267+05:30 DEBUG 26940 --- [Product-with-Security] [main] com.ltim.product.util.JWTFilter          : Filter 'JWTFilter' configured for use
+2025-02-04T14:19:41.333+05:30  INFO 26940 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T14:19:41.467+05:30  INFO 26940 --- [Product-with-Security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-02-04T14:19:41.469+05:30  INFO 26940 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T14:19:41.514+05:30  INFO 26940 --- [Product-with-Security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-04T14:19:41.566+05:30  INFO 26940 --- [Product-with-Security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-02-04T14:19:41.592+05:30  INFO 26940 --- [Product-with-Security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-04T14:19:41.809+05:30  INFO 26940 --- [Product-with-Security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04T14:19:41.845+05:30  WARN 26940 --- [Product-with-Security] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-04T14:19:41.858+05:30  INFO 26940 --- [Product-with-Security] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-04T14:19:42.442+05:30  INFO 26940 --- [Product-with-Security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-04T14:19:42.470+05:30  INFO 26940 --- [Product-with-Security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T14:19:42.813+05:30  WARN 26940 --- [Product-with-Security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04T14:19:42.847+05:30  INFO 26940 --- [Product-with-Security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-02-04T14:19:43.198+05:30  INFO 26940 --- [Product-with-Security] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-04T14:19:43.276+05:30  INFO 26940 --- [Product-with-Security] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-04T14:19:43.615+05:30  INFO 26940 --- [Product-with-Security] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-02-04T14:19:43.723+05:30  INFO 26940 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-02-04T14:19:43.733+05:30  INFO 26940 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Started ProductWithSecurityApplication in 4.399 seconds (process running for 4.992)
+2025-02-04T14:19:44.150+05:30  INFO 26940 --- [Product-with-Security] [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T14:19:44.151+05:30  INFO 26940 --- [Product-with-Security] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T14:19:44.152+05:30  INFO 26940 --- [Product-with-Security] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-04T14:20:23.550+05:30 TRACE 26940 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Inside method updateProduct of ProductServiceImpl with productId:1
+2025-02-04T14:20:23.597+05:30 TRACE 26940 --- [Product-with-Security] [http-nio-8082-exec-1] c.l.p.service.impl.ProductServiceImpl    : Product not exist with id: 1
+2025-02-04T14:20:36.815+05:30 TRACE 26940 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : Inside method createProduct of ProductServiceImpl
+2025-02-04T14:20:36.861+05:30 TRACE 26940 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : Product added with Name: Mobile
+2025-02-04T14:20:36.861+05:30 TRACE 26940 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : exit from method createProduct of ProductServiceImpl
+2025-02-04T14:20:42.829+05:30 TRACE 26940 --- [Product-with-Security] [http-nio-8082-exec-3] c.l.p.service.impl.ProductServiceImpl    : Inside method updateProduct of ProductServiceImpl with productId:1
+2025-02-04T14:20:53.268+05:30 TRACE 26940 --- [Product-with-Security] [http-nio-8082-exec-4] c.l.p.service.impl.ProductServiceImpl    : Inside method getAllProducts of ProductServiceImpl
+2025-02-04T14:20:53.343+05:30 TRACE 26940 --- [Product-with-Security] [http-nio-8082-exec-4] c.l.p.service.impl.ProductServiceImpl    : Products available are:[Product [id=1, name=null, description=null, price=0.0, quantity=5]]
+2025-02-04T14:54:40.782+05:30  WARN 26940 --- [Product-with-Security] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m59s133ms13µs800ns).
+2025-02-04T15:00:04.293+05:30  INFO 26940 --- [Product-with-Security] [RMI TCP Connection(26)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-02-04T15:00:04.296+05:30  INFO 26940 --- [Product-with-Security] [RMI TCP Connection(26)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-04T15:00:04.303+05:30  INFO 26940 --- [Product-with-Security] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-02-04T15:00:04.307+05:30  INFO 26940 --- [Product-with-Security] [RMI TCP Connection(26)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T15:00:04.309+05:30  INFO 26940 --- [Product-with-Security] [RMI TCP Connection(26)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-02-04T15:00:04.312+05:30  INFO 26940 --- [Product-with-Security] [RMI TCP Connection(26)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-02-04T15:05:49.405+05:30  INFO 30732 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Starting ProductWithSecurityApplication using Java 21.0.4 with PID 30732 (C:\Temp\LtiMWorksapce\LtiMProject\target\classes started by 10829552 in C:\Temp\LtiMWorksapce\LtiMProject)
+2025-02-04T15:05:49.406+05:30 DEBUG 30732 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-02-04T15:05:49.408+05:30  INFO 30732 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T15:05:50.410+05:30  INFO 30732 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04T15:05:50.472+05:30  INFO 30732 --- [Product-with-Security] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2025-02-04T15:05:51.102+05:30  INFO 30732 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-02-04T15:05:51.116+05:30  INFO 30732 --- [Product-with-Security] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-04T15:05:51.116+05:30  INFO 30732 --- [Product-with-Security] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-04T15:05:51.191+05:30  INFO 30732 --- [Product-with-Security] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-04T15:05:51.192+05:30  INFO 30732 --- [Product-with-Security] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1724 ms
+2025-02-04T15:05:51.353+05:30 DEBUG 30732 --- [Product-with-Security] [main] com.ltim.product.util.JWTFilter          : Filter 'JWTFilter' configured for use
+2025-02-04T15:05:51.431+05:30  INFO 30732 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-04T15:05:51.599+05:30  INFO 30732 --- [Product-with-Security] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-02-04T15:05:51.602+05:30  INFO 30732 --- [Product-with-Security] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-04T15:05:51.652+05:30  INFO 30732 --- [Product-with-Security] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-04T15:05:51.707+05:30  INFO 30732 --- [Product-with-Security] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-02-04T15:05:51.739+05:30  INFO 30732 --- [Product-with-Security] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-04T15:05:52.001+05:30  INFO 30732 --- [Product-with-Security] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-04T15:05:52.062+05:30  WARN 30732 --- [Product-with-Security] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-04T15:05:52.082+05:30  INFO 30732 --- [Product-with-Security] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-04T15:05:52.818+05:30  INFO 30732 --- [Product-with-Security] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-04T15:05:52.853+05:30  INFO 30732 --- [Product-with-Security] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-04T15:05:53.268+05:30  WARN 30732 --- [Product-with-Security] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-04T15:05:53.305+05:30  INFO 30732 --- [Product-with-Security] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-02-04T15:07:05.529+05:30  INFO 30732 --- [Product-with-Security] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2025-02-04T15:07:05.626+05:30  INFO 30732 --- [Product-with-Security] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-04T15:07:06.029+05:30  INFO 30732 --- [Product-with-Security] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-02-04T15:07:06.159+05:30  INFO 30732 --- [Product-with-Security] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-02-04T15:07:06.175+05:30  INFO 30732 --- [Product-with-Security] [main] c.l.p.ProductWithSecurityApplication     : Started ProductWithSecurityApplication in 77.179 seconds (process running for 78.031)
+2025-02-04T15:07:06.515+05:30  INFO 30732 --- [Product-with-Security] [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-04T15:07:06.516+05:30  INFO 30732 --- [Product-with-Security] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-04T15:07:06.520+05:30  INFO 30732 --- [Product-with-Security] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-02-04T15:08:05.206+05:30 TRACE 30732 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : Inside method createProduct of ProductServiceImpl
+2025-02-04T15:08:05.299+05:30 TRACE 30732 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : Product added with Name: Mobile
+2025-02-04T15:08:05.299+05:30 TRACE 30732 --- [Product-with-Security] [http-nio-8082-exec-2] c.l.p.service.impl.ProductServiceImpl    : exit from method createProduct of ProductServiceImpl
+2025-02-04T15:08:23.338+05:30 TRACE 30732 --- [Product-with-Security] [http-nio-8082-exec-4] c.l.p.service.impl.ProductServiceImpl    : Inside method updateProduct of ProductServiceImpl with productId:1
